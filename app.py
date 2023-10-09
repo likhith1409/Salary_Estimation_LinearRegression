@@ -2,15 +2,7 @@
 import pickle
 import pandas as pd
 import streamlit as st
-
-
-try:
-    import sklearn
-except ImportError:
-    st.sidebar.warning("scikit-learn is not installed. Click the button below to install it.")
-    if st.sidebar.button("Install scikit-learn"):
-        subprocess.call(["pip", "install", "scikit-learn"])
-        st.sidebar.success("scikit-learn has been successfully installed. Please restart the app.")
+import sklearn
 
 # Load the trained model
 loaded_model = pickle.load(open('trained_model.sav', 'rb'))
