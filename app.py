@@ -23,9 +23,10 @@ st.write("Enter your details below and click 'Predict Salary' to get your predic
 input_age = st.number_input('Age', min_value=0)
 input_gender = st.radio('Gender', ['Male', 'Female'])
 input_education_level = st.selectbox('Education Level', ["Bachelor's", "Master's", 'PhD'])
-st.write("Example Job Titles: Software Engineer, Graphic Designer, Junior Data Analyst, etc")
 #input_job_title = st.text_input('Job Title')
-input_job_title = st.selectbox('Select Job Title', loaded_feature_names[7:-1])
+#input_job_title = st.selectbox('Select Job Title', loaded_feature_names[7:-1])
+job_titles = [title.replace('Job Title_', '') for title in loaded_feature_names[7:-1]]
+input_job_title = st.selectbox('Select Job Title', job_titles)
 input_years_of_experience = st.number_input('Years of Experience', min_value=0)
 
 
