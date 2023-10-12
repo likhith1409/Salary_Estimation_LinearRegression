@@ -20,7 +20,7 @@ st.write("Enter your details below and click 'Predict Salary' to get your predic
 
 
 # Collect input data from the user
-input_age = st.number_input('Age', min_value=0)
+input_age = st.number_input('Age', min_value=22, max_value=60)
 input_gender = st.radio('Gender', ['Male', 'Female'])
 input_education_level = st.selectbox('Education Level', ["Bachelor's", "Master's", 'PhD'])
 #input_job_title = st.text_input('Job Title')
@@ -233,8 +233,10 @@ if st.button('Predict Salary'):
     # Make predictions for the input data
     predicted_salary = loaded_model.predict(input_data)
 
-    # Display the predicted salary without the "$" symbol
-    st.write(f'Predicted Salary: {predicted_salary[0]:,.2f}')
+    if predicted_salary < 0:
+        st.write("Please input data correctly. The predicted salary is negative.")
+    else:
+        st.write(f'Predicted Salary: ${predicted_salary:,.2f}')
 
 # Add a section for model description
 st.subheader('About This Model')
