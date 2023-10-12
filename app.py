@@ -233,10 +233,7 @@ if st.button('Predict Salary'):
     # Make predictions for the input data
     predicted_salary = loaded_model.predict(input_data)
 
-    if predicted_salary < 0:
-        st.write("Please input data correctly. The predicted salary is negative.")
-    else:
-        st.write(f'Predicted Salary: ${predicted_salary:,.2f}')
+    st.write(f'Predicted Salary: {predicted_salary:,.2f}')
 
 # Add a section for model description
 st.subheader('About This Model')
