@@ -27,7 +27,8 @@ input_education_level = st.selectbox('Education Level', ["Bachelor's", "Master's
 #input_job_title = st.selectbox('Select Job Title', loaded_feature_names[7:-1])
 job_titles = [title.replace('Job Title_', '') for title in loaded_feature_names[7:-1]]
 input_job_title = st.selectbox('Select Job Title', job_titles)
-input_years_of_experience = st.number_input('Years of Experience', min_value=0)
+input_years_of_experience = st.number_input('Years of Experience', min_value=0, max_value=10, value=0)
+
 
 
 if st.button('Predict Salary'):
