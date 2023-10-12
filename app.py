@@ -233,7 +233,7 @@ if st.button('Predict Salary'):
     # Make predictions for the input data
     predicted_salary = loaded_model.predict(input_data)
 
-    st.write(f'Predicted Salary: {predicted_salary:,.2f}')
+    st.write(f'Predicted Salary: {predicted_salary[0]:,.2f}')
 
 # Add a section for model description
 st.subheader('About This Model')
