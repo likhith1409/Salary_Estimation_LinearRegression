@@ -1,4 +1,4 @@
-# Salary_Prediction_Model
+# Salary_Estimation_LinearRegression
 
 
 https://likhithsalarypredictionmodel.streamlit.app/
