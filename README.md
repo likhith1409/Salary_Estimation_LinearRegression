@@ -50,6 +50,12 @@ Before you get started, make sure you have the following prerequisites:
 3. Input the relevant job parameters (e.g., years of experience, education level, etc.).
 4. Click the "Predict Salary" button to get a salary estimate based on the model's prediction.
 
+![salliner1](https://github.com/likhith1409/Salary_Estimation_LinearRegression/assets/91020626/1eabc037-5863-4699-b569-1b9680722b64)
+![sallineareq](https://github.com/likhith1409/Salary_Estimation_LinearRegression/assets/91020626/9c646814-70ad-4ebb-850f-e3d5192167c3)
+![linear](https://github.com/likhith1409/Salary_Estimation_LinearRegression/assets/91020626/0545a12a-ded3-4be0-9c4e-1d37b17eeb98)
+
+
+
 ## Contributing
 
 Contributions to this project are welcome. To contribute, follow these steps:
